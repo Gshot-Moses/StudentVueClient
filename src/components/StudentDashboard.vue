@@ -1,29 +1,38 @@
 <template>
     <div class="container">
         <div class="row justify-content-center">
-            <h3 class="mb-4">Welcome back {{ store.currentUser.name }}</h3>
-             <div class="col-md-6">
+            <div class="col-md-6">
+                <h3 class="mb-4">Welcome back {{ store.currentUser.name }}</h3>
                 <div class="card">
                     <div class="card-body">
-                    <div class="row">
-                        <div class="col-6">
-                            <p class="mb-0">Name:</p>
-                            <p class="mb-0">Phone Number:</p>
-                            <p class="mb-0">Age:</p>
-                            <p class="mb-0">Class:</p>
-                            <p class="mb-0">Gender:</p>
-                        </div>
-                        <div class="col-6">
-                            <p class="mb-0">{{ store.currentUser.name }}</p>
-                            <p class="mb-0">{{ store.currentUser.phoneNumber }}</p>
-                            <p class="mb-0">{{ store.currentUser.age }}</p>
-                            <p class="mb-0">{{ store.currentUser.class }}</p>
-                            <p class="mb-0">{{ store.currentUser.gender }}</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                        <table class="table">
+                            <tbody>
+                                <tr>
+                                    <td>Name:</td>
+                                    <td>{{ store.currentUser.name }}</td>
+                                </tr>
+                                <tr>
+                                    <td>Phone Number:</td>
+                                    <td>{{ store.currentUser.phoneNumber }}</td>
+                                </tr>
+                                <tr>
+                                    <td>Age:</td>
+                                    <td>{{ store.currentUser.age }}</td>
+                                </tr>
+                                <tr>
+                                    <td>Class:</td>
+                                    <td>{{ store.currentUser.class }}</td>
+                                </tr>
+                                <tr>
+                                    <td>Gender:</td>
+                                    <td>{{ store.currentUser.gender }}</td>
+                                </tr>
+                            </tbody>
+            </table>
         </div>
+    </div>
+</div>
+
   </div>
 </div>
 
